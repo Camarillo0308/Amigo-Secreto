@@ -3,9 +3,9 @@
 //Variables a utilizar
 let Amigos = [];
 let existe = false;
+
 function agregarAmigo(nombre){
     if(nombre.trim() != ""){
-        
         for(let amigo of Amigos){
             if(amigo == nombre){
                 existe = true;
@@ -46,7 +46,7 @@ function asignarTextoElemento(elemento, texto) {
 }
 
 function sortearAmigo(){
-    asignarTextoElemento('#resultado', Amigos.length === 0 ? 'La lista esta Vacía' : 'El amigo secreto sorteado es: '+Amigos[Math.floor(Math.random() * Amigos.length)]});
+    asignarTextoElemento('#resultado', Amigos.length === 0 ? 'La lista esta Vacía' : 'El amigo secreto sorteado es: '+Amigos[Math.floor(Math.random() * Amigos.length)]);
     return;
 }
 
